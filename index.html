@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Handsigns</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class = "container">
+<center>
+    <h3 style = "letter-spacing: 4px;" class = "btn btn-primary heading">HANDSIGN IDENTIFICATION
+        <br>
+      </h3>
+            <br><br>
+      
+            <p style="font-size: 22px;">Different Handsigns:
+                <br>
+              <b>Victory</b>
+              <br>
+              <b>Shadow Clone</b>
+              <br>
+              <b>Rat</b>
+              <br>
+              <b>Snake</b>
+              <br>
+              <b>Tiger</b>
+            </p>
+<br><br>
+            <div id = "Webcam_holder_div" class = "col-md-4 col-sm-12 col-xs-12">
+                <h3 style = "font-weight: bold;">Webcam - </h3>
+                <br>
+                <div id = "webcam_display_div" style = "height: 300px; width: 350px; border: 3px solid black;"></div>
+                <br>
+                <button onclick = "take_a_snapshot()" class = "btn btn-warning">Take a snap</button>
+            </div>
+<br><br>
+            <div id = "guesses_holder_div" class = "col-md-4 col-sm-12 col-xs-12">
+                <label>Prediction 1 - </label>
+                <p class = "guess_name" id = "result_guess_name"></p>
+                <div class = "correspond_pic" id = "update_pic"><img class = "updated_img" id = "updated_img" src = ""></div>
+
+                <label>Prediction 2 - </label>
+                <p class = "guess_name" id = "result_guess_name2"></p>
+                <div class = "correspond_pic" id = "update_pic2"><img class = "updated_img" id = "updated_img2" src = ""></div>
+            </div>
+<br><br>
+            <div id = "snapshot_div" class = "col-md-4 col-sm-12 col-xs-12">
+                <h3 style = "font-weight: bold;">Snapshot: </h3>
+                <br>
+                <div id = "snapshot_display_div" style = "height: 300px; width: 350px; border: 3px solid black;"></div>
+                <br>
+                <button onclick = "check()" class = "btn btn-success">Identify handsign</button>
+            </div>
+</center>
+        </div>
+<script src = "main.js"></script>
+    </body>
+    
+</html>
+
+

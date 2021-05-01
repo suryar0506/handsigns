@@ -1,0 +1,20 @@
+#snapshot_div{
+    margin-top : -75px;
+}
+
+body{
+    background-color: rgb(182, 237, 246);
+}
+
+.guess_name{
+    font: 40px red bold;
+}
+
+.correspond_pic{
+    font-size: 48px;
+}
+
+.updated_img{
+    width : 100px;
+    height: 100px;
+}
